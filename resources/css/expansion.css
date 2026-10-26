@@ -73,3 +73,10 @@ a:focus-visible { outline:1px solid currentColor; outline-offset:5px; }
 }
 
 @media(max-width:568px) { .section-nav { gap:12px; justify-content:space-between; } }
+
+/* Explicit link margins also support browsers without flex-gap. */
+.opening-page .opening-nav { column-gap:0; }
+.opening-page .opening-nav > a + a { margin-left:40px; }
+@media(max-width:810px) {
+ .opening-page .opening-nav > a + a { margin-left:26px; }
+}
