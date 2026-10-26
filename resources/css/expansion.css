@@ -120,3 +120,11 @@ a:focus-visible { outline:1px solid currentColor; outline-offset:5px; }
 
 #credits.copy-panel { padding:40px; border:0; }
 @media(max-width:810px) { #credits.copy-panel { padding:32px 24px; } }
+
+/* The opening text determines the image height on side-by-side layouts. */
+.services .intro { margin-bottom:64px; }
+.intro .portrait { aspect-ratio:auto; align-self:stretch; min-height:0; }
+@media(max-width:810px) { .services .intro { margin-bottom:48px; } }
+@media(max-width:568px) {
+ .intro .portrait { aspect-ratio:4/3; align-self:start; }
+}
