@@ -189,3 +189,23 @@ a:focus-visible { outline:1px solid currentColor; outline-offset:5px; }
 @media(max-width:810px) {
  .services .about-services { margin-bottom:44px; }
 }
+
+/* CV-inspired rhythm: compact groups with clear section breaks. */
+.services .text-links { gap:8px 32px; margin-top:24px; }
+.services .text-links a { padding:8px 0; border:0; background:none; justify-content:flex-start; text-align:left; line-height:1.2; text-decoration:underline; text-underline-offset:.18em; }
+.services .text-links a:hover { background:none; }
+.services .columns p, .services .about-services p, .services .copy-panel p { font-size:1.7rem; line-height:1.35; }
+.services #consulting > .eyebrow, .services #teams > .eyebrow, .services #styling > .eyebrow { margin-bottom:12px; }
+.services #consulting > h2, .services #teams > h2, .services #styling > h2, .services #contact > h2 { margin-bottom:16px; }
+.services .section-lead { margin-bottom:32px; }
+.services .service-options { gap:16px 24px; }
+.services .service-options article { display:grid; grid-template-rows:subgrid; grid-row:span 3; row-gap:12px; padding:20px; align-items:start; }
+.services .service-options h3 { margin-bottom:0; }
+.services .service-options .price { margin-top:4px; }
+.services > .columns h3 { margin-bottom:12px; }
+.services .about-services p + p { margin-top:20px; }
+.services .process { margin-top:40px; }
+.services .looks { margin:32px 0; }
+@media(max-width:568px) {
+ .services .text-links { align-items:flex-start; gap:0; }
+}
