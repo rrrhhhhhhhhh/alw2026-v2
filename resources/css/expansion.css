@@ -1,0 +1,62 @@
+/* Additions reuse the art site's font faces and header positioning. */
+.opening-page, .services-page { background:#fff; color:#000; }
+.opening-page header, .services-page header { background:#fff; }
+.opening-page a:hover, .services-page a:hover { text-decoration:underline; text-underline-offset:.15em; }
+a:focus-visible { outline:1px solid currentColor; outline-offset:5px; }
+.sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+.opening { display:block; width:100%; height:auto; min-height:100svh; padding:100px 12px 60px 35.5%; }
+.opening nav { display:flex; flex-direction:column; align-items:flex-start; gap:20px; }
+.opening nav a { font-size:2.7rem; line-height:1.2; }
+.home-link { font-size:2.7rem; position:absolute; left:35.5vw; }
+.services { display:block; width:100%; height:auto; padding:100px 12px 30px; }
+.services p { font-size:2.4rem; line-height:1.3; }
+.services h2 { font-size:3.8rem; line-height:1.1; text-align:left; margin:0 0 24px; max-width:690px; }
+.services h3 { font-size:2.7rem; line-height:1.15; margin:0 0 14px; }
+.section-nav { display:flex; flex-wrap:wrap; gap:12px 28px; margin:0 0 66px; }
+.section-nav a { font-size:2.1rem; }
+.services section { margin-bottom:100px; scroll-margin-top:80px; }
+.services .eyebrow { font-size:1.7rem; margin-bottom:28px; }
+.intro { display:grid; grid-template-columns:1fr 1fr; gap:8vw; align-items:start; }
+.intro > div:first-child { max-width:660px; }
+.intro h2 { font-size:clamp(3.8rem,4.6vw,6.4rem); }
+.placeholder { background:#e3e3e3; width:100%; aspect-ratio:3/4; }
+.portrait { max-width:360px; justify-self:center; }
+.text-links { display:flex; flex-wrap:wrap; gap:16px 30px; margin-top:32px; font-size:2.1rem; }
+.text-links a, .underlined { text-decoration:underline; text-underline-offset:.15em; }
+.columns { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:32px; }
+.columns.three { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.columns p { font-size:2rem; }
+.columns article { display:flex; flex-direction:column; }
+.columns .price { margin-top:24px; }
+#credits { padding:25px 0; border-top:1px solid #ddd; border-bottom:1px solid #ddd; }
+.about-services { display:grid; grid-template-columns:1fr 2fr; gap:6vw; }
+.about-services p + p { margin-top:24px; }
+.services > .columns { margin-bottom:100px; }
+.section-lead { max-width:780px; margin-bottom:44px; }
+.process { margin-top:65px; padding-top:30px; border-top:1px solid #ddd; }
+.looks { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:32px; margin-bottom:32px; }
+.services .small-note { font-size:1.7rem; margin:36px 0 22px; }
+#contact { padding-top:40px; border-top:1px solid #ddd; }
+.contact-email { overflow-wrap:anywhere; }
+.services footer { display:flex; justify-content:space-between; gap:24px; font-size:1.7rem; }
+@media(max-width:810px) {
+ .opening { padding-left:12px; }
+ .opening nav a, .home-link { font-size:2rem; }
+ .home-link { left:auto; right:12px; }
+ .services p { font-size:2rem; }
+ .services h2 { font-size:3.4rem; }
+ .services h3 { font-size:2.3rem; }
+ .intro { gap:30px; }
+ .columns, .columns.three { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .about-services { grid-template-columns:1fr; gap:12px; }
+ .looks { gap:20px; grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .services section, .services > .columns { margin-bottom:70px; }
+ .section-nav { margin-bottom:45px; gap:14px 20px; }
+}
+@media(max-width:568px) {
+ .intro { grid-template-columns:1fr; gap:36px; }
+ .portrait { justify-self:start; max-width:280px; }
+ .columns, .columns.three { grid-template-columns:1fr; gap:35px; }
+ .columns .price { margin-top:12px; }
+ .services footer { flex-direction:column; gap:10px; }
+}
