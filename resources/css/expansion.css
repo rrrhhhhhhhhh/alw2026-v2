@@ -189,3 +189,19 @@ a:focus-visible { outline:1px solid currentColor; outline-offset:5px; }
 @media(max-width:810px) {
  .services .about-services { margin-bottom:44px; }
 }
+
+/* Sans serif treatment based on DASI's available fallback fonts. */
+.services p, .services .text-links, .services .contact-email, .services footer { font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
+.services p { line-height:1.5; }
+.services .intro > div:first-child > p { font-size:2rem; line-height:1.5; }
+.services .section-lead { font-size:2rem; line-height:1.5; }
+.services .eyebrow { font-size:1.4rem; line-height:1.4; letter-spacing:.02em; }
+.services .text-links { font-size:1.5rem; }
+.services .copy-panel p, .services .columns p, .services .about-services p, .services .testimonials p { font-size:1.6rem; line-height:1.5; }
+.services .copy-panel .eyebrow { font-size:1.4rem; }
+.services .contact-email { font-size:2rem; }
+.services footer, .services .small-note, .services .instagram-placeholder { font-size:1.4rem; }
+@media(max-width:810px) {
+ .services .intro > div:first-child > p, .services .section-lead { font-size:1.8rem; }
+ .services .contact-email { font-size:1.7rem; }
+}
